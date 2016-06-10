@@ -12,34 +12,28 @@ namespace fortuneTeller
         {
    
  //Develop a console application that will tell the user’s fortune based on data received from the user. The specifications are as follows:
-​
-​
             Console.WriteLine("If you allow me the opportunity, I would like to tell you your future. \n\nEnter Y/N.\n");
             string response = Console.ReadLine();
             string yes = response.ToUpper();
-​
             while (yes == "Y")
             {
-​
                 Console.WriteLine("Enter your first name then press enter\n");
                 string ans = Console.ReadLine();
                 string firstName = ans.ToUpper();
-​
                 Console.WriteLine("Enter your last name then press enter.\n");
                 string ans1 = Console.ReadLine();
                 string lastName = ans1.ToUpper();
-​
+
                 Console.WriteLine("Enter your age then press enter.\n");
                 int age = int.Parse(Console.ReadLine());
-​
                 Console.WriteLine("Enter the month were you born ex. (January), then press enter.\n");
                 string ans2 = Console.ReadLine();
                 string month = ans2.ToUpper();
-​
+
                 Console.WriteLine("Next, you will be prompted to enter your favorite color (ROYGBIV). \n\nIf you don't know what these colors are, \nenter: \"Help\" now or press enter to continue .");
                 string ans3 = Console.ReadLine();
                 string colorUpper = ans3.ToUpper();
-​
+
                 if (colorUpper == "HELP") //Can also use (colorUpper.Equals("HELP"))
                 {
                     Console.WriteLine("\nYour color options are: red, orange, yellow, green, blue, indigo or violet.\n");
@@ -48,23 +42,23 @@ namespace fortuneTeller
                 string colorAns = Console.ReadLine();
                 string color = colorAns.ToUpper();
                 Console.WriteLine("Your color " + color + " is valid!\n");
-​
+
                 Console.WriteLine("Enter how many siblings do you have then press enter.\n");
                 int siblings = int.Parse(Console.ReadLine());
-​
+
                 int retire = WillRetireIn(age);
                 string dollars = MoneyInBank(firstName, lastName, month);
                 string place = (Location(siblings));
                 string transport = GetTransportation(color);
-​
-​
-​
+
+
+
                 //Retire Program
                 /*Console.WriteLine("Enter your age");
                 int age = int.Parse(Console.ReadLine());
                 int retire = WillRetireIn(age);
                 Console.WriteLine(retire);*/
-​
+
                 //Money In The Bank Program
                 /*Console.WriteLine("Enter the month were you born ex. (January), then press enter.");
                 string ans3 = Console.ReadLine();
@@ -77,24 +71,24 @@ namespace fortuneTeller
                 string lastName = name1.ToUpper();
                 string dollars = MoneyInBank(firstName, lastName, month);
                 Console.WriteLine(dollars);*/
-​
+
                 //Location Program
                 /*Console.WriteLine("Enter amount of siblings.");
                 int siblings = int.Parse(Console.ReadLine());
                 string place = (Location(siblings));
                 Console.WriteLine(place);*/
-​
+
                 //Transportation Program
                 /*Console.WriteLine("Enter your color and press enter");
                 string colorAns = Console.ReadLine();
                 string color = colorAns.ToUpper();
                 string transport = GetTransportation(color);
                 Console.WriteLine(transport);*/
-​
-​
+
+
                 Console.WriteLine("\n\t" + firstName + " " + lastName + " will retire in " + retire + " years \n\n\twith " + dollars + " in the bank, \n\n\ta vacation home in " + place + "and drive " + transport + ".\n\n");
-​
-​
+
+
                 Console.WriteLine("Would you like to try again? Y/N");
                 string yesNo1 = Console.ReadLine();
                 string again = yesNo1.ToUpper();
@@ -103,10 +97,10 @@ namespace fortuneTeller
                     Console.WriteLine("\nMaybe next time!");
                     break;
                 }
-​
+
             }
         }
-​
+
         //Retire Method
         static int WillRetireIn(int age)
         {
@@ -119,7 +113,7 @@ namespace fortuneTeller
                 return 20;
             }
         }
-​
+
         //Money In The Bank Method
         static string MoneyInBank(string firstName, string lastName, string month)
         {
@@ -127,7 +121,7 @@ namespace fortuneTeller
             string monthL2 = month.Substring(1, 1);
             string monthL3 = month.Substring(2, 2);
             string wholeName = firstName + lastName;
-​
+
             if (wholeName.Contains(monthL) == true)
             {
                 return "$1.00";
@@ -145,11 +139,11 @@ namespace fortuneTeller
                 return "$0.00";
             }
         }
-​
+
         //Location Method
         static string Location(int siblings)
         {
-​
+
             if (siblings == 0)
             {
                 string location = "your parents house ";
@@ -176,11 +170,11 @@ namespace fortuneTeller
                 return location;
             }
         }
-​
+
         //Transportation method
         static string GetTransportation(string color)
         {
-​
+
             if (color == "RED")
             {
                 return "a mini pony";

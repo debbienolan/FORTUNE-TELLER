@@ -10,3 +10,9 @@ C:\Users\Deb\Documents\Visual Studio 2015\Projects\Weekly Projects\fortuneTeller
 C:\Users\Deb\Documents\Visual Studio 2015\Projects\Weekly Projects\fortuneTeller\fortuneTeller\bin\Debug\fortuneTeller.exe
 C:\Users\Deb\Documents\Visual Studio 2015\Projects\Weekly Projects\fortuneTeller\fortuneTeller\bin\Debug\fortuneTeller.pdb
 C:\Users\Deb\Documents\Visual Studio 2015\Projects\Weekly Projects\fortuneTeller\fortuneTeller\obj\Debug\fortuneTeller.csprojResolveAssemblyReference.cache
+C:\Users\Deb\Documents\Visual Studio 2015\Projects\WeeklyProjects\fortuneTeller\fortuneTeller\bin\Debug\fortuneTeller.exe.config
+C:\Users\Deb\Documents\Visual Studio 2015\Projects\WeeklyProjects\fortuneTeller\fortuneTeller\obj\Debug\fortuneTeller.exe
+C:\Users\Deb\Documents\Visual Studio 2015\Projects\WeeklyProjects\fortuneTeller\fortuneTeller\obj\Debug\fortuneTeller.pdb
+C:\Users\Deb\Documents\Visual Studio 2015\Projects\WeeklyProjects\fortuneTeller\fortuneTeller\obj\Debug\fortuneTeller.csprojResolveAssemblyReference.cache
+C:\Users\Deb\Documents\Visual Studio 2015\Projects\WeeklyProjects\fortuneTeller\fortuneTeller\bin\Debug\fortuneTeller.exe
+C:\Users\Deb\Documents\Visual Studio 2015\Projects\WeeklyProjects\fortuneTeller\fortuneTeller\bin\Debug\fortuneTeller.pdb
